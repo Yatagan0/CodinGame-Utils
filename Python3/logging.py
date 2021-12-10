@@ -8,7 +8,7 @@ def log(toLog, cond=True):
     s = ""
     for i in toLog:
         if type(i) is float:
-            ss = "{:.2f}".format(s)
+            ss = "{:.2f}".format(i)
         else:
             ss = str(i).strip()
         s+= ss+" "
