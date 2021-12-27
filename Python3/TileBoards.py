@@ -11,7 +11,11 @@ class Direction:
     def SetOpposites(dir1, dir2):
         dir1.opposite = dir2
         dir2.opposite = dir1
-
+        
+    def Move(self, x,y):
+        return x + self.dirX, y + self.dirY
+    
+    
 #Direct direction are directly left, right, up and down
 LDir = Direction("LEFT",[-1, 0] )
 RDir = Direction("RIGHT",[1, 0] )
